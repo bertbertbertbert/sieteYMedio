@@ -1,0 +1,43 @@
+body{
+    width: 100%; height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: grey;
+}
+.container{
+    position: relative;
+    width: 70%; height: 50%;
+
+}
+.columna{
+    width: 50%; height:95%;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#columnaI{
+    position: absolute;
+    left:0;
+}
+#columnaD{
+    position: absolute;
+    right:0;
+}
+
+.displayNone{
+    display: none;
+}
+
+#contador{
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#timeOut{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}

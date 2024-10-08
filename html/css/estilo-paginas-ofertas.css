@@ -1,0 +1,427 @@
+*{
+    margin: 0px; padding: 0px;
+}
+@font-face {
+    font-family: poppins;
+    src: url(fuente/Poppins-Regular.ttf);
+}
+a{
+    text-decoration: none;
+}
+body{   
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 250px;
+    background: radial-gradient(circle, rgba(41, 36, 118, 1) 23%, rgba(28,28,186,1) 40%, rgba(13,127,239,1) 100%);
+}
+#telefono{
+    position: absolute;
+    right: 30px;
+    top: 170px;
+    display: flex;
+    justify-self: flex-end;
+    color: white;
+    font-size: 1.7em;
+}
+#telefono img{
+width: 50px; height: 50px;
+rotate: 25deg;
+}
+#telefono img:hover{
+    animation-name: ring;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes ring{
+    0%{transform: rotate(0deg);}
+    5%{transform: rotate(-15deg);}
+    10%{transform: rotate(15deg);}
+    15%{transform: rotate(-15deg);}
+    20%{transform: rotate(15deg);}
+    25%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    35%{transform: rotate(-15deg);}
+    40%{transform: rotate(15deg);}
+    45%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    45%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    55%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    65%{transform: rotate(-15deg);}
+    70%{transform: rotate(15deg);}
+    75%{transform: rotate(-15deg);}
+    80%{transform: rotate(15deg);}
+    85%{transform: rotate(-15deg);}
+    90%{transform: rotate(15deg);}
+    95%{transform: rotate(-15deg);}
+    100%{transform: rotate(0deg);}
+    }
+#telefono p{
+margin-top: 6px;
+text-align: center;
+font-family: poppins;
+font-size: .8em;
+}
+nav{
+    width: 100%;
+    height: 39px;
+    padding: 10px 0px;
+    z-index: 2;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+   width: 180px;
+   height: 30px;
+   margin: 0px 30px;
+   padding-top: 2px;
+   font-family: poppins;
+   border-radius: 20px;
+   border: 2px solid  rgba(246, 146, 30, 1);;
+   background-color: rgba(246, 146, 30, 1);
+   cursor: pointer;
+   transition: .5s ease-in-out;
+}
+nav ul li:hover{
+    border: 2px solid  rgba(246, 146, 30, 1);;
+    height: 120px;
+    height: 60px;
+    margin-top:-15px;
+    background: rgba(246, 146, 30, 1);
+ box-shadow: 0px 0px 10px black;
+}
+nav ul li a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li img{
+    width:0px;
+    height:0px;
+    opacity: .0;
+    transition: .5s ease-in-out;
+}
+nav ul li:hover img{
+    width:50px;
+    height:50px;
+    opacity: 1;
+}
+nav ul li p{    
+    font-size: 1em;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(246, 146, 30, 1);
+    border-radius: 20px;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+nav ul li:hover p{
+    font-size: 0em;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+main{
+    width: 100%; height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+main h1{
+    width: 20%;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    font-family: poppins;
+    margin:  20px 0px 0px 0px;  
+    padding: 5px 10px;
+    background-color:rgba(17,100,225,1);
+    border-radius: 20px;
+}
+
+        .container {
+            display: flex;
+            height: 600px;
+            padding: 20px;
+        }
+
+        .left {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            position: relative;
+        }
+
+        .box {
+            border: solid 3px;
+            border-color: rgb(247, 186, 1);
+            flex: 1;
+            margin-right: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.801);
+            font-family: poppins;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .right img {
+            border-radius: 30px;
+            max-width: 100%;
+            width: 800px;
+            height: 560px;
+            box-shadow: 0px 0px 30px black;
+
+        }
+
+        .box h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+      #parrafo-oferta {
+            width: 40%;
+            border: solid 3px;
+            border-color: rgb(247, 186, 1);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.801);
+            font-family: poppins;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .price-tag {
+            background-color: rgb(13, 127, 239);
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+        }
+        footer{
+width: 100%;
+height: fit-content;
+color: white;
+text-align: center;
+font-family: poppins;
+margin-top: 50px;
+background: radial-gradient(circle, rgba(41, 36, 118, 1) 23%, rgba(28,28,186,1) 40%, rgba(13,127,239,1) 100%);
+width: 100%;
+}
+footer h3{
+padding: 20px;
+}
+ 
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+            
+            header{
+                background: rgba(28,28,186,1);
+                height:150px;
+                flex-direction: column;
+                align-items: center;
+            }
+           #logo{
+                width: 190px;
+                height: 190px;
+            }
+            #telefono{
+                position:initial;
+                align-self: flex-end;
+                margin-right: 3%;
+                margin-bottom: 5px;
+            }
+            .slide{
+                display: none;
+            }
+            #telefono img{
+                width: 20px; height: 15px;
+                margin: 0px; padding: 0px;
+                rotate: 25deg;
+            }
+            #telefono p{
+                margin: 0px; padding: 0px;
+                font-size: .4em;
+            }  
+            nav{
+                background-color: rgba(246, 146, 30, 1);
+                height: fit-content;
+                padding:0px;
+            }
+            nav ul{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 30px;
+        }
+        nav ul li{
+        display: flex;
+        margin:0px;
+        width: fit-content;
+        height: 35%;
+        padding: 0px 3px;
+        }
+        nav ul li:hover{
+        border: 2px solid  rgba(246, 146, 30, 1);
+        margin:0px;
+        height: 35%;
+        box-shadow:none;
+        }
+        nav ul li p{
+        font-size: .7em;
+        align-self:flex-start;
+        margin-top:-2px; padding:0px;
+         }   
+        nav ul li p:hover{
+        font-size: .7em;
+        opacity: 1;
+            }
+        nav ul li img{
+        display: none;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        main h1{
+            width: 20%;
+            height: fit-content;
+            width: fit-content;
+            color: white;
+            font-size: 20px;
+            font-family: poppins;
+            margin:  10px 0px 0px 0px;  
+            padding: 10px;
+            background-color:rgba(17,100,225,1);
+            border-radius: 20px;
+        }
+        .container {
+                display: flex;
+                flex-direction: column-reverse;
+                height:fit-content;
+                padding: 0px;
+            }
+    
+            .left {
+                display: flex;
+                flex: 1;
+                padding: 10px;
+                position: relative;
+            }
+    
+            .box {
+                width: 50%;
+                border: solid 3px;
+                border-color: rgb(247, 186, 1);
+                flex: 1;
+                margin: 0px 0px 10px 0px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.801);
+                color: white;
+                display: flex;
+                flex-direction: column;;
+                align-items: center;
+                position: relative;
+            }
+    
+    
+            .right {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+    
+            .right img {
+                border-radius: 30px;
+                max-width: 100%;
+                width: 100%;
+                height: 190px;
+                box-shadow: none;
+    
+            }
+    
+            .box h2 {
+                font-size: .9em;
+                text-align:start;
+                margin-bottom: 5px;
+            }
+    
+            .box ul {
+                list-style-type: disc;
+                padding-left: 8px;
+                font-size: 11px;
+            }
+    
+            #parrafo-oferta {
+                width: 40%;
+                border: solid 3px;
+                border-color: rgb(247, 186, 1);
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.801);
+                font-family: poppins;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-size: 10px;
+            }
+    
+    
+            .price-tag {
+                background-color: rgb(13, 127, 239);
+                text-align: center;
+                border-radius: 10px;
+                position: absolute;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 15px;
+                font-weight: bold;
+            }
+            
+            footer{
+        margin-top: 20px;
+        color: white;
+        background: rgba(28,28,186,1);
+        font-size: 1em;
+        height: fit-content;
+    }
+    footer h3{
+        font-size: .7em;
+    }
+        }

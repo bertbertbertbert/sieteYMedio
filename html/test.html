@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-test.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>TEST</title>
+</head>
+<body>    
+    <header>
+        <img id="logo" src="imagenes/logo.png" alt="logo">
+       <section id="telefono"><img src="imagenes/telefono2.png" width="35px" alt="telefono"><p> Tel: 934-455-777</p></section>
+    </header>
+
+    <nav> <ul>
+        <li><a href="Index.html"><p>INICIO</p><img src="imagenes/pagina-inicio-2.png" alt="pagina-inicio-2"></a></li>
+        <li><a href="#contenedor-ofertas"><p>OFERTAS</p> <img src="imagenes/oferta-2.png" alt="oferta-2"></a></li>
+        <li><a href="sabias-que.html"><p>SABÍAS QUE...</p> <img src="imagenes/sabias-que-2.png" alt="sabias-que-2"></a></li>
+        <li><a href="Contactanos.html"><p>CONTÁCTANOS</p> <img src="imagenes/contacto.png" alt="contacto"></a></ul>
+    </nav> 
+    <main>
+        <section id="videopadre">
+            <article class="videohijo">
+                <h1>CREA TU EXPERIENCIA A MEDIDA</h1> 
+                <iframe class="videotest" src="https://www.youtube.com/embed/GS7KdrCtcMw?si=36IfOYmISkJd3VwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>            
+        </section>
+        <section id="containerpreguntas">
+            <section id="pregunta1">
+                <h2>¿En que estación del año te gusta viajar?</h2> 
+                <article class="opciones1">                
+                    <article class="opciones1izquierda">
+                        <div class="imagenboton1">
+                            <img src="imagenes-test/pregunta1/primavera.png" alt="Primavera" class="icon">                        
+                        </div>
+                        <button class="option-button" onclick="showSelection('Primavera')">Primavera</button>
+                        <input type="checkbox" class="barcelona" value="2" name="estacion">
+                        <div class="imagenboton1">
+                            <img src="imagenes-test/pregunta1/otoño.png" alt="Otoño" class="icon"> 
+                                                 
+                        </div>  
+                        <button class="option-button" onclick="showSelection('Otoño')">Otoño</button>
+                        <input type="checkbox" class="rusia" value="2" name="estacion"> 
+                    </article>               
+                    
+                    <article class="opciones1derecha">
+                        <div class="imagenboton1">
+                            <img src="imagenes-test/pregunta1/verano.png" alt="Verano" class="icon">                        
+                        </div>                  
+                        <button class="option-button" onclick="showSelection('Verano')">Verano</button> 
+                        <input type="checkbox" class="usa" value="2" name="estacion">
+                        <div class="imagenboton1">
+                            <img src="imagenes-test/pregunta1/invierno.png" alt="invierno" class="icon">                       
+                        </div>
+                        <button class="option-button" onclick="showSelection('Invierno')">Invierno</button> 
+                        <input type="checkbox" class="colombia" value="2" name="estacion"> 
+                    </article>                            
+                </article>           
+            </section>
+    
+            <section id="pregunta2">
+                <h2>¿Qué paisaje te atrae más?</h2> 
+                <article class="opciones2">                
+                    <article class="opciones2izquierda">
+                        <div class="imagenboton2">
+                            <img src="imagenes-test/pregunta2/beach.2.jpg" alt="Playa" class="icon">                        
+                        </div>
+                        <button class="option-button" onclick="showSelection('Playa')">Playa</button>
+                        <input type="checkbox" class="barcelona" value="1.5"name="paisaje"> 
+                        <div class="imagenboton2">
+                            <img src="imagenes-test/pregunta2/mountain.2.jpg" alt="Montaña" class="icon">                        
+                        </div>  
+                        <button class="option-button" onclick="showSelection('Montaña')">Montaña</button>
+                        <input type="checkbox" class="rusia" value="1.5" name="paisaje"> 
+                    </article>               
+                    
+                    <article class="opciones2derecha">
+                        <div class="imagenboton2">
+                            <img src="imagenes-test/pregunta2/street.2.jpg" alt="Ciudad" class="icon">                        
+                        </div>                  
+                        <button class="option-button" onclick="showSelection('Ciudad')">Ciudad</button> 
+                        <input type="checkbox" class="usa" value="1.5" name="paisaje"> 
+                        <div class="imagenboton2">
+                            <img src="imagenes-test/pregunta2/desierto.2.jpg" alt="Desierto" class="icon">                       
+                        </div>
+                        <button class="option-button" onclick="showSelection('Desierto')">Desierto</button> 
+                        <input type="checkbox" class="colombia" value="1.5" name="paisaje"> 
+                    </article>                            
+                </article>           
+            </section>
+    
+            <section id="pregunta3">
+                <h2>¿Qué actividad te relaja más?</h2> 
+                <article class="opciones3">                
+                    <article class="opciones3izquierda">
+                        <div class="imagenboton3">
+                            <img src="imagenes-test/pregunta3/reading-book.3.jpg" alt="Sentarte a Leer" class="icon">                        
+                        </div>
+                        <button class="option-button" onclick="showSelection('Sentarte a Leer')">Sentarte a Leer</button>
+                        <input type="checkbox" class="barcelona" value="1.25" name="actividad"> 
+    
+                        <div class="imagenboton3">
+                            <img src="imagenes-test/pregunta3/teatro.3.jpg" alt="Ir al Teatro" class="icon">                        
+                        </div>  
+                        <button class="option-button" onclick="showSelection('Ir al Teatro')">Ir al Teatro</button>
+                        <input type="checkbox" class="rusia" value="1.25" name="actividad"> 
+                    </article>               
+                    
+                    <article class="opciones3derecha">
+                        <div class="imagenboton3">
+                            <img src="imagenes-test/pregunta3/museo.3.jpg" alt="Ver Museos" class="icon">                        
+                        </div>                  
+                        <button class="option-button" onclick="showSelection('Ver Museos')">Ver Museos</button> 
+                        <input type="checkbox" class="usa" value="1.25" name="actividad"> 
+                        <div class="imagenboton3">
+                            <img src="imagenes-test/pregunta3/yoga.3.jpg" alt="Yoga" class="icon">                       
+                        </div>
+                        <button class="option-button" onclick="showSelection('Yoga')">Act. al aire libre</button> 
+                        <input type="checkbox" class="colombia" value="1.25" name="actividad"> 
+                    </article>                            
+                </article>           
+            </section>
+    
+            <section id="pregunta4">
+                <h2>¿Cuál es tu compañia favorita cuando viajas?</h2> 
+                <article class="opciones4">                
+                    <article class="opciones4izquierda">
+                        <div class="imagenboton4">
+                            <img src="imagenes-test/pregunta4/pareja.4.jpg" alt="En Pareja" class="icon">                        
+                        </div>
+                        <button class="option-button" onclick="showSelection('En Pareja')">En Pareja</button>
+                        <input type="checkbox" class="barcelona"  value="1" name="compania"> 
+                        <div class="imagenboton4">
+                            <img src="imagenes-test/pregunta4/perro.4.jpg" alt="Mascota" class="icon">                        
+                        </div>  
+                        <button class="option-button" onclick="showSelection('Mascota')">Con mi Mascota</button>
+                        <input type="checkbox" class="rusia" value="1" name="compania"> 
+
+                    </article>               
+                    
+                    <article class="opciones4derecha">
+                        <div class="imagenboton4">
+                            <img src="imagenes-test/pregunta4/amigos.4.jpg" alt="Amigos" class="icon">                        
+                        </div>                  
+                        <button class="option-button" onclick="showSelection('Amigos')">Con Amigos</button> 
+                        <input type="checkbox" class="usa" value="1" name="compania"> 
+
+                        <div class="imagenboton4">
+                            <img src="imagenes-test/pregunta4/single.4.jpg" alt="Single" class="icon">                       
+                        </div>
+                        <button class="option-button" onclick="showSelection('Single')">Single Experience</button> 
+                        <input type="checkbox" class="colombia" value="1" name="compania"> 
+
+                    </article>                            
+                </article>           
+            </section>
+    
+            <section id="pregunta5">
+                <h2>¿Cuál sería tu experiencia ideal en vacaciones?</h2> 
+                <article class="opciones5">                
+                    <article class="opciones5izquierda">
+                        <div class="imagenboton5">
+                            <img src="imagenes-test/pregunta5/aventura.5.jpg" alt="Tirolina" class="icon">                        
+                        </div>
+                        <button class="option-button" onclick="showSelection('Tirolina')">Lanzarte en Tirolina</button>
+                        <input type="checkbox" class="barcelona" value="1" name="experiencia"> 
+
+    
+                        <div class="imagenboton5">
+                            <img src="imagenes-test/pregunta5/kayack.5.jpg" alt="kayack" class="icon">                        
+                        </div>  
+                        <button class="option-button" onclick="showSelection('kayack')">Navegar kayack</button>
+                        <input type="checkbox" class="rusia" value="1" name="experiencia"> 
+
+                    </article>               
+                    
+                    <article class="opciones5derecha">
+                        <div class="imagenboton5">
+                            <img src="imagenes-test/pregunta5/bike.5.jpg" alt="bicicleta" class="icon">                        
+                        </div>                  
+                        <button class="option-button" onclick="showSelection('bicicleta')">Ruta en bicicleta</button> 
+                        <input type="checkbox" class="usa" value="1" name="experiencia"> 
+
+                        <div class="imagenboton5">
+                            <img src="imagenes-test/pregunta5/comida-lujo.5.jpg" alt="cena de lujo" class="icon">                       
+                        </div>
+                        <button class="option-button" onclick="showSelection('cena de lujo')">Cena de lujo</button> 
+                        <input type="checkbox" class="colombia" value="1" name="experiencia"> 
+
+                    </article>                            
+                </article>           
+            </section>
+        </section>        
+
+        <section id="respuesta">
+            <button class="option-button" onclick="showSelection('¿A DÓNDE VUELO?')" id="btn">¿A DÓNDE VUELO? </button> 
+        </section>
+
+    
+
+        
+        
+    </main>
+    <footer><h3>Aviso Legal | Politica de Provacidad | Politica de Cookies | Ajuste de Cookies <br>VIVA Expiernce® 2024.</h3></footer>
+    <script src="test.js"></script>
+</body>
+</html>

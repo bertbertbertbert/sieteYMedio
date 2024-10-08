@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <title>BlackJack</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>JUGADOR</h2>
+    <p id="cartaUnoJugador">#</p>
+    <p id="cartaDosJugador">#</p>
+    <p id="cartaPedida">#</p>
+    <p id="cifraTotalJugador">#</p>
+    <div>
+    <H3>PARTIDAS GANADAS JUGADOR</H3>
+    <p id="partidasGanadasJugador">#</p>
+</div>
+</div>
+<div>
+    <button id="start">START</button>
+    <button id="pedirCarta">PEDIR CARTA</button>
+   <!--  <button id="pedirCartaBanca">PEDIR CARTA</button> -->
+    <button id="plantarse">PLANTARSE</button>
+</div>
+    <div>
+    <H2>BANCA</H2>
+    <p id="cartaUnoBanca">#</p>
+    <p id="cartaDosBanca">#</p>
+    <p id="cartaPedidaBanca">#</p>
+    <p id="cifraTotalBanca">#</p>
+    <div>
+    <H3>PARTIDAS GANADAS BANCA</H3>
+    <p id="partidasGanadasBanca">#</p>
+</div>
+</div>
+    <button id="reset">RESET</button>
+    <script src="app.js"></script>
+</body>
+</html>

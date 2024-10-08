@@ -1,0 +1,1828 @@
+*{
+    margin: 0px; padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: poppins;
+    src: url(fuente/Poppins-Regular.ttf);
+}
+body{
+    height: 200vh;
+    width: 100%;
+    
+}
+*{
+    margin: 0px; padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px auto;
+    width: 100%;
+    height: 250px;
+    background: radial-gradient(circle, rgba(41, 36, 118, 1) 23%, rgba(28,28,186,1) 40%, rgba(13,127,239,1) 100%);
+}
+#telefono{
+    position: absolute;
+    right: 30px;
+    top: 170px;
+    display: flex;
+    justify-self: flex-end;
+    color: white;
+    font-size: 1.7em;
+}
+#telefono img{
+   width: 50px; height: 50px;
+   rotate: 25deg;
+}
+#telefono img:hover{
+    animation-name: ring;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes ring{
+    0%{transform: rotate(0deg);}
+    5%{transform: rotate(-15deg);}
+    10%{transform: rotate(15deg);}
+    15%{transform: rotate(-15deg);}
+    20%{transform: rotate(15deg);}
+    25%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    35%{transform: rotate(-15deg);}
+    40%{transform: rotate(15deg);}
+    45%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    45%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    55%{transform: rotate(-15deg);}
+    50%{transform: rotate(15deg);}
+    65%{transform: rotate(-15deg);}
+    70%{transform: rotate(15deg);}
+    75%{transform: rotate(-15deg);}
+    80%{transform: rotate(15deg);}
+    85%{transform: rotate(-15deg);}
+    90%{transform: rotate(15deg);}
+    95%{transform: rotate(-15deg);}
+    100%{transform: rotate(0deg);}
+    }
+#telefono p{
+   margin-top: 6px;
+   text-align: center;
+   font-family: poppins;
+   font-size: .8em;
+}   
+nav{
+ 
+    width: 100%;
+    height: 39px;
+    padding: 10px 0px;
+    z-index: 3;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+   
+   width: 180px;
+   height: 30px;
+   margin: 0px 30px;
+   padding-top: 5px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-radius: 20px;
+   border: 2px solid  rgba(246, 146, 30, 1);;
+   background-color: rgba(246, 146, 30, 1);
+   cursor: pointer;
+   transition: .5s ease-in-out;
+}
+nav ul li:hover{
+    border: 2px solid  rgba(246, 146, 30, 1);;
+    height: 120px;
+    height: 60px;
+    margin-top:-15px;
+    background: rgba(246, 146, 30, 1);
+ box-shadow: 0px 0px 10px black;
+}
+nav ul li a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li img{
+   
+    width:0px;
+    height:0px;
+    opacity: .0;
+    transition: .5s ease-in-out;
+}
+nav ul li:hover img{
+    width:50px;
+    height:50px;
+    opacity: 1;
+}
+nav ul li p{    
+  
+    font-size: 1em;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(246, 146, 30, 1);
+    border-radius: 20px;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+nav ul li:hover p{
+    font-size: 0em;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+main{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    width: 100%;
+    height: fit-content;
+}
+.titulos{
+    color: rgb(28, 28, 186);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     
+}
+
+.titulos:hover{
+    text-shadow: 0px 1px 5px rgba(0,0,0.50);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-8px);   
+}
+
+#titulo1:hover{
+    transform: translateY(-8px);
+   
+}
+
+#titulo1{
+    background-color: rgba(28, 28, 186, 0.884);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+text-shadow: 0px 5px 15px rgba(0,0,0, 0.4);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+ #Catalunya{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+ }
+
+ #caja1{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja1 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+    
+}
+
+#caja1 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja1 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+    
+}
+
+#caja1 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+   
+}
+
+#caja1 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja1 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+}
+
+#caja1 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+
+#caja2{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja2 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja2 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja2 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja2 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja2 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja2 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja2 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja3{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja3 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja3 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja3 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja3 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja3 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja3 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja3 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+
+#Colombia{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+ }
+
+ #caja4{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja4 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja4 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja4 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja4 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja4 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja4 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja4 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja5{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja5 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja5 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja5 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja5 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja5 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja5 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja5 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+
+#caja6{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja6 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja6 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja6 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja6 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja6 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja6 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja6 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+
+
+#EstadosUnidos{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+ }
+
+ #caja7{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja7 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja7 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja7 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja7 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja7 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja7 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja7 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja8{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja8 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja8 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja8 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja8 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja8 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja8 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja8 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja9{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja9 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja9 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja9 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja9 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja9 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja9 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja9 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+
+#Rusia{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+
+ #caja10{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja10 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja10 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja10 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja10 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja10 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja10 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja10 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja11{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;
+    
+}
+#caja11 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja11 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja11 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja11 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja11 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja11 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja11 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+#caja12{
+    width: 400px;
+    height: 400px;
+    margin-right: 2em;
+    border: 3px solid rgb(246 146 30);
+    border-radius: 25px;  
+}
+
+#caja12 figure{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#caja12 figure:hover{
+    box-shadow: 0px 15px 25px rgba(0,0,0.50);
+
+}
+
+#caja12 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#caja12 figure #capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+#caja12 figure:hover > #capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#caja12 figure:hover > #capa h1{
+   font-weight: 400;
+   margin: 1.5em;
+   color: #fff;
+   text-align: center;
+   transition: 0.5s ease-out;
+  
+}
+
+#caja12 figure:hover > #capa h4{
+    color: #fff;
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 150px;
+    background: radial-gradient(circle, rgba(41, 36, 118, 1) 23%, rgba(28,28,186,1) 40%, rgba(13,127,239,1) 100%);
+    width: 100%;
+    }
+    footer h3{
+    padding: 20px;
+    }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+    header{
+        background: rgba(28,28,186,1);
+        height:150px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        width: 190px;
+        height: 190px;
+    }
+    #telefono{
+     position:initial;
+     align-self: flex-end;
+     margin-right: 3%;
+     margin-bottom: 5px;
+    }
+    .slide{
+        display: none;
+    }
+    #telefono img{
+        width: 20px; height: 15px;
+        margin: 0px; padding: 0px;
+        rotate: 25deg;
+        }
+   #telefono p{
+        margin: 0px; padding: 0px;
+        font-size: .4em;
+    }  
+    nav{
+        background-color: rgba(246, 146, 30, 1);
+        height: fit-content;
+        padding:0px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30px;
+        }
+    nav ul li{
+        display: flex;
+        margin:0px;
+        width: fit-content;
+        height: 35%;
+        padding: 0px 3px;
+    }
+    nav ul li:hover{
+        border: 2px solid  rgba(246, 146, 30, 1);
+        margin:0px;
+        height: 35%;
+        box-shadow:none;
+    }
+    nav ul li p{
+        font-size: .7em;
+        align-self:flex-start;
+        margin-top:-2px; padding:0px;
+    }   
+    nav ul li p:hover{
+        font-size: .7em;
+        opacity: 1;
+    }
+    nav ul li img{
+        display: none;
+    }  
+    main{
+   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+        width: 100%;
+        height: fit-content;
+    }
+        
+        .titulos{
+            color: rgb(28, 28, 186);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+             
+        }
+        
+        .titulos:hover{
+            text-shadow: 0px 1px 5px rgba(0,0,0.50);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: translateY(-8px);   
+        }
+        
+        #titulo1:hover{
+            transform: translateY(-8px);
+           
+        }
+        
+        #titulo1{
+            background-color: rgb(66, 66, 161);
+            border-radius: 20px;
+            padding: 5px;
+            width: fit-content;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-shadow: 0px 5px 15px rgba(0,0,0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-weight: 400;
+        }
+        
+         #Catalunya{
+            
+            flex-direction: column;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            
+         }
+        
+         #caja1{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+            
+            
+        }
+        #caja1 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+           
+        }
+        
+        #caja1 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja1 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+            
+        }
+        
+        #caja1 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja1 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja1 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja1 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        
+        #caja2{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja2 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;  
+        }
+        
+        #caja2 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        }
+        
+        #caja2 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja2 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja2 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja2 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja2 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja3{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+        #caja3 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja3 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja3 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja3 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja3 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja3 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja3 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        
+        #Colombia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;  
+         }
+        
+         #caja4{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+        #caja4 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja4 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja4 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja4 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja4 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja4 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+
+        }
+        
+        #caja4 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja5{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja5 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja5 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        }
+        
+        #caja5 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja5 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja5 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja5 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja5 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        
+        #caja6{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja6 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja6 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja6 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja6 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja6 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja6 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja6 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        
+        #EstadosUnidos{
+            display: flex;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;  
+         }
+        
+         #caja7{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja7 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja7 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja7 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja7 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja7 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja7 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja7 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja8{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+        #caja8 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja8 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        }
+        
+        #caja8 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja8 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja8 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja8 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja8 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja9{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja9 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja9 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        }
+        
+        #caja9 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+            border: 3px solid rgb(246 146 30);
+        }
+        
+        #caja9 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja9 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja9 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja9 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        
+        #Rusia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+        
+         #caja10{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja10 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja10 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        }
+        
+        #caja10 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja10 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja10 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja10 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja10 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja11{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+
+        #caja11 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja11 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50);
+        
+        }
+        
+        #caja11 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja11 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja11 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja11 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja11 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        
+        #caja12{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+            margin-left: 40px; 
+        }
+        
+        #caja12 figure{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        
+        #caja12 figure:hover{
+            box-shadow: 0px 15px 25px rgba(0,0,0.50); 
+        }
+        
+        #caja12 figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-in-out;
+            border-radius: 25px;
+        }
+        
+        #caja12 figure #capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 103, 123, 0.6);
+            opacity: 0;
+            visibility: hidden;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        
+        #caja12 figure:hover > #capa{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #caja12 figure:hover > #capa h1{
+           font-weight: 400;
+           margin: 1.5em;
+           color: #fff;
+           text-align: center;
+           transition: 0.5s ease-out;
+           font-size: 15px;
+        }
+        
+        #caja12 figure:hover > #capa h4{
+            color: #fff;
+            font-weight: 400;
+            margin: 1.5em;
+            font-size: 12px;
+        }
+        footer{
+            margin-top: 40px;
+            background: rgba(28,28,186,1);
+            font-size: 1em;
+            height: fit-content;
+        }
+        footer h3{
+            font-size: .9em;
+        }
+    }
+        
