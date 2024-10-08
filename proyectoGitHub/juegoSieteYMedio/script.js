@@ -16,7 +16,7 @@ jugadorUno.disabled = true;
 jugadorDos.disabled = true;
 vidasJugadorUno.innerHTML=5;
 vidasJugadorDos.innerHTML=5;
-alert(vidasJugadorUno--);
+
 
 var baraja = [
 { nombre: '1 de oros', valor: 1 }, { nombre: '2 de oros', valor: 2 }, { nombre: '3 de oros', valor: 3 }, { nombre: '4 de oros', valor: 4 }, { nombre: '5 de oros', valor: 5 }, { nombre: '6 de oros', valor: 6 }, { nombre: '7 de oros', valor: 7 }, { nombre: '10 de oros', valor: 0.5 },{ nombre: '11 de oros', valor: 0.5 }, { nombre: '12 de oros', valor: 0.5 }, 
